@@ -139,11 +139,11 @@ Fill in after running `01_schema.sql` on the live project.
 
 | Check | Expected | Observed | Date / by |
 |---|---|---|---|
-| V1: RLS enabled on 5 tables | all `true` | | |
-| V2: API role grants on `public` | 0 rows | | |
-| V3: `anon` can execute helper | `false` | | |
-| V3: `authenticated` can execute helper | `true` | | |
-| V4: `on_auth_user_created` exists | 1 row | | |
+| V1: RLS enabled on 5 tables | all `true` | all `true` (5 tables) | 2026-11-19 / Joshua |
+| V2: API role grants on `public` | 0 rows | 0 rows | 2026-11-19 / Joshua |
+| V3: `anon` can execute helper | `false` | `false` | 2026-11-19 / Joshua |
+| V3: `authenticated` can execute helper | `true` | `true` | 2026-11-19 / Joshua |
+| V4: `on_auth_user_created` exists | 1 row | 1 row (`on_auth_user_created`) | 2026-11-19 / Joshua |
 
 ## 8. Known Limitations
 
